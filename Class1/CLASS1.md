@@ -100,3 +100,21 @@ Example: [blockly-games](https://github.com/google/blockly-games/commits/master)
 You may have noticed that the above two sections mentioned repeatedly how teams of people might work together to build software, but didn't spend much time on how those people get paid. Much (maybe even most) or the software made today is *open source*. This means that it's developed by programmers and then the source code is provided for free to the public. There are upsides and downsides to this arrangement and a variety of opinions on the practice. 
 
 The main takeaway is that as a programmer, you have no end of software to incorporate into your own projects, modify or hack.
+
+## Memory \[BONUS\]
+
+All programs use memory when they run. Memory is the space set aside by your computer to hold things while the computer is on- it's your RAM. This is not the same thing as the storage space on disk, which is just used to persist things while the computer is turned off. Everything that your program uses is stored in memory- numbers, text, even the program itself. There are two kinds of memory your program can access- the **Stack** and the **Heap**. In many dynamic languages (and even compiled languages, really), you won't have to worry about the difference, but it's good to know that it exists.
+
+**Stack**
+
+* Quicker than the heap
+* Used automatically when you use data like numbers and text in your program
+* Has limits (but they're probably higher than you'll need to go)
+* Goes away when the program ends
+
+**Heap**
+
+* Slower than the stack
+* Used explicitly (in compiled languages) with keywords like 'new'
+* Has much higher limits
+* Can sometimes NOT go away when the program ends, leading to "memory leaks"
