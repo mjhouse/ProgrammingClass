@@ -31,11 +31,23 @@ def main():
     for key, value in fields.items():
         print(f"{key} = {value}")
 
-    fields["NewSoftware-version"] = 123
+    fields["ticketnumer"] = 8675309
+    fields["VendorName"] = 8675309
+    fields["Prodnamefield"] = "helloworld"
     form_filler.write(fields)
 
     form_filler.save("scratch/output.pdf")
 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
     # reader = PdfReader("scratch/document.pdf")
     # fields = reader.get_form_text_fields()
 
